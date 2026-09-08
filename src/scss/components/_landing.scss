@@ -190,12 +190,12 @@
 .ecs-about {
   overflow: hidden;
   background: #fff;
-  padding-top: 112px;
-  padding-bottom: 64px;
+  padding-top: 80px;
+  padding-bottom: 48px;
 
   @include bp(lg) {
-    padding-top: 208px;
-    padding-bottom: 128px;
+    padding-top: 144px;
+    padding-bottom: 96px;
   }
 
   &__inner {
