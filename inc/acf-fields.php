@@ -127,7 +127,7 @@ add_action(
 		$fields[] = $tab( 'about', 'Về ECS' );
 		$fields[] = $text( 'about_eyebrow', 'Dòng nhỏ trên', 'ECSGES' );
 		$fields[] = $textarea( 'about_heading', 'Tiêu đề (mỗi dòng 1 hàng)', "KIẾN TẠO HỆ SINH THÁI\nGIÁO DỤC TOÀN CẦU", 'Dòng cuối tô màu cam.', 2 );
-		$fields[] = $textarea( 'about_body', 'Nội dung (mỗi đoạn cách nhau 1 dòng trống)', "ECS Global phát triển lớn mạnh dưới sự dẫn dắt tâm huyết và bề dày kinh nghiệm của đội ngũ lãnh đạo trẻ, cùng với sự năng động, sáng tạo, đoàn kết của nhiều lớp nhân viên.\n\nSau hơn 9 năm, ECS Global đã khẳng định được vị thế trên thị trường ở các lĩnh vực tuyển sinh, hướng nghiệp khởi nghiệp, việc làm, giáo dục, truyền thông và công nghệ số.", '', 6 );
+		$fields[] = $textarea( 'about_body', 'Nội dung (mỗi đoạn cách nhau 1 dòng trống)', "ECS phát triển lớn mạnh dưới sự dẫn dắt tâm huyết và bề dày kinh nghiệm của đội ngũ lãnh đạo trẻ, cùng với sự năng động, sáng tạo, đoàn kết của nhiều lớp nhân viên.\n\nSau hơn 9 năm, ECS đã khẳng định được vị thế trên thị trường ở các lĩnh vực tuyển sinh, hướng nghiệp khởi nghiệp, việc làm, giáo dục, truyền thông và công nghệ số.", '', 6 );
 		$fields[] = $text( 'about_cta_label', 'Link — chữ', 'Tìm hiểu thêm' );
 		$fields[] = $text( 'about_cta_link', 'Link — địa chỉ', '', 'Để trống = tự trỏ về chuyên mục "linh-vuc-hoat-dong".' );
 

@@ -51,10 +51,10 @@ function ecsges_en_map() {
 
 		/* About */
 		'KIẾN TẠO HỆ SINH THÁI'  => 'BUILDING THE ECOSYSTEM',
-		'ECS Global phát triển lớn mạnh dưới sự dẫn dắt tâm huyết và bề dày kinh nghiệm của đội ngũ lãnh đạo trẻ, cùng với sự năng động, sáng tạo, đoàn kết của nhiều lớp nhân viên.'
-			=> 'ECS Global has grown strongly under the dedicated leadership and deep experience of a young management team, together with the dynamism, creativity and unity of many generations of staff.',
-		'Sau hơn 9 năm, ECS Global đã khẳng định được vị thế trên thị trường ở các lĩnh vực tuyển sinh, hướng nghiệp khởi nghiệp, việc làm, giáo dục, truyền thông và công nghệ số.'
-			=> 'After more than 9 years, ECS Global has affirmed its market position across admissions, career & startup guidance, employment, education, media and digital technology.',
+		'ECS phát triển lớn mạnh dưới sự dẫn dắt tâm huyết và bề dày kinh nghiệm của đội ngũ lãnh đạo trẻ, cùng với sự năng động, sáng tạo, đoàn kết của nhiều lớp nhân viên.'
+			=> 'ECS has grown strongly under the dedicated leadership and deep experience of a young management team, together with the dynamism, creativity and unity of many generations of staff.',
+		'Sau hơn 9 năm, ECS đã khẳng định được vị thế trên thị trường ở các lĩnh vực tuyển sinh, hướng nghiệp khởi nghiệp, việc làm, giáo dục, truyền thông và công nghệ số.'
+			=> 'After more than 9 years, ECS has affirmed its market position across admissions, career & startup guidance, employment, education, media and digital technology.',
 
 		/* Journey (home) */
 		'ĐỒNG HÀNH CÙNG NHỮNG'   => 'ACCOMPANYING EVERY',
