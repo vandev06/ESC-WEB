@@ -342,7 +342,7 @@
       grid-template-rows: repeat(3, minmax(0, 1fr));
       padding-block: 0;
       padding-right: 48px;
-      padding-left: max(40px, calc((100vw - #{$page-max}) / 2));
+      padding-left: max(40px, calc((100vw - 1240px) / 2));
     }
   }
 
