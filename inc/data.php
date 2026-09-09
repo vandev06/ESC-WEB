@@ -229,9 +229,9 @@ function ecsges_hero_slider_defaults()
 /**
  * Thông tin liên hệ footer.
  *
- * 'entity' đứng THAY CHO nhãn "Địa chỉ:" ở cột LIÊN HỆ trong footer: dòng đầu
- * là tên thực thể, dòng dưới là địa chỉ. Đây là khối NAP (Name-Address-Phone)
- * mà Google đọc để khớp doanh nghiệp, nên tên phải viết đủ, không viết tắt.
+ * 'entity' là tiêu đề cột LIÊN HỆ trong footer (footer.php dùng riêng khoá
+ * này, không liên quan schema Organization — tên tổ chức cho Google xem ở
+ * inc/schema.php:86, không đọc khoá này).
  *
  * CHÚ Ý: section-contact.php cũng gọi hàm này và chỉ dùng address/email/phone —
  * thêm khoá mới thì được, ĐỔI TÊN 3 khoá cũ sẽ làm vỡ trang Liên hệ.
@@ -239,7 +239,7 @@ function ecsges_hero_slider_defaults()
 function ecsges_footer_contact()
 {
 	return array(
-		'entity' => 'Hệ sinh thái Giáo dục Toàn cầu ECS',
+		'entity' => 'Liên hệ',
 		'address' => 'Toà ROX Tower Goldmark City 136 Hồ Tùng Mậu, Phú Diễn, Hà Nội',
 		'email' => 'contact@ecs.edu.vn',
 		'phone' => '024.668.39.668',

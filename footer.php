@@ -58,7 +58,6 @@ $ecsges_tel = preg_replace('/\./', '', $ecsges_contact['phone']);
 			<?php endforeach; ?>
 
 			<div class="ecs-footer__col">
-				<?php // Tiêu đề cột = tên thực thể (thay chữ "LIÊN HỆ"), địa chỉ giữ nguyên bên dưới. ?>
 				<div class="ecs-footer__col-title ecs-footer__col-title--entity"><?php echo esc_html($ecsges_contact['entity']); ?></div>
 				<ul class="ecs-footer__contact">
 					<li class="ecs-footer__contact-item">

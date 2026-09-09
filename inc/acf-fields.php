@@ -174,9 +174,9 @@ add_action(
 		$fields[] = $text( 'footer_address', 'Địa chỉ', $contact['address'] );
 		$fields[] = $text( 'footer_email', 'Email', $contact['email'] );
 		$fields[] = $text( 'footer_phone', 'Điện thoại', $contact['phone'] );
-		$fields[] = $text( 'footer_facebook', 'Facebook URL', '#' );
-		$fields[] = $text( 'footer_youtube', 'YouTube URL', '#' );
-		$fields[] = $text( 'footer_tiktok', 'TikTok URL', '#' );
+		$fields[] = $text( 'footer_facebook', 'Facebook URL', 'https://www.facebook.com/ecsglobal.edu.vn' );
+		$fields[] = $text( 'footer_youtube', 'YouTube URL', 'https://www.youtube.com/@ecs.global' );
+		$fields[] = $text( 'footer_tiktok', 'TikTok URL', 'https://www.tiktok.com/@ecsglobal' );
 
 		acf_add_local_field_group(
 			array(
