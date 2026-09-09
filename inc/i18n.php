@@ -48,6 +48,8 @@ function ecsges_en_map() {
 		'HỆ SINH THÁI'           => 'THE ECOSYSTEM',
 		'GIÁO DỤC TOÀN CẦU'      => 'FOR GLOBAL EDUCATION',
 		'Vì Tương Lai Việt Nam'  => 'For The Future Of Vietnam',
+		'Kiến tạo hệ sinh thái giáo dục toàn cầu — Vì tương lai Việt Nam'
+			=> 'Building a global education ecosystem — For the future of Vietnam',
 
 		/* About */
 		'KIẾN TẠO HỆ SINH THÁI'  => 'BUILDING THE ECOSYSTEM',
@@ -229,12 +231,18 @@ function ecsges_en_map() {
 		'VỚI HỆ SINH THÁI GIÁO DỤC KẾT NỐI'  => 'WITH A CONNECTED EDUCATION ECOSYSTEM',
 		'ECSGES phát triển hệ sinh thái giáo dục với mạng lưới đơn vị thành viên, đối tác và các lĩnh vực hoạt động được kết nối trong một chiến lược thống nhất, hướng tới nâng cao chất lượng giáo dục và phát triển nguồn nhân lực Việt Nam.'
 			=> 'ECSGES develops an education ecosystem in which member units, partners and fields of operation are connected within one unified strategy, aiming to raise education quality and develop Vietnam\'s human resources.',
+		'Trong một thế giới không ngừng kết nối, giáo dục không thể phát triển trong những giới hạn đơn lẻ. ECSGES mở rộng mạng lưới hợp tác với nhà trường, doanh nghiệp, tổ chức giáo dục và các đối tác trong nước, quốc tế; kết nối tri thức, nguồn lực và cơ hội để đưa giáo dục Việt Nam đến gần hơn với những chuẩn mực toàn cầu.'
+			=> 'In a world of constant connection, education cannot grow within isolated boundaries. ECSGES expands its network of cooperation with schools, businesses, educational organisations and partners at home and abroad; connecting knowledge, resources and opportunities to bring Vietnamese education closer to global standards.',
+		'Từ nền tảng giáo dục và nguồn nhân lực Việt Nam, ECSGES hướng tới xây dựng một hệ sinh thái giáo dục có khả năng kết nối rộng hơn, hợp tác sâu hơn và tạo ra những giá trị có sức lan tỏa vượt qua biên giới.'
+			=> 'Building on Vietnam\'s education foundation and human resources, ECSGES aims to build an education ecosystem capable of connecting more broadly, collaborating more deeply and creating value that spreads beyond borders.',
 
 		/* Section Journey (trang chủ) */
 		'Học viên ECS Global'    => 'ECS Global learners',
 		'Hoạt động đào tạo'      => 'Training activities',
 		'Sự kiện ECS Global'     => 'ECS Global events',
 		'Cộng đồng ECS Global'   => 'ECS Global community',
+		'Mỗi hành trình phát triển đều bắt đầu từ một lựa chọn đúng. ECSGES đồng hành cùng người học từ nhận diện năng lực và định hướng tương lai, đến lựa chọn môi trường học tập, phát triển kiến thức và kỹ năng, kết nối cơ hội việc làm và từng bước hội nhập với thị trường lao động.'
+			=> 'Every journey of growth begins with the right choice. ECSGES accompanies learners from identifying their abilities and future direction, to choosing a learning environment, developing knowledge and skills, connecting to job opportunities, and gradually integrating into the labour market.',
 
 		/* Section Contact + trang Liên hệ */
 		'LIÊN HỆ VỚI CHÚNG TÔI'  => 'CONTACT US',
@@ -290,6 +298,11 @@ function ecsges_en_map() {
 			=> 'As a bridge between workers and businesses, ECSGES provides domestic and international employment solutions, helping raise the quality of human resources and promote sustainable career development. We accompany workers from orientation and training through to finding the right job.',
 		'ECSGES cung cấp các giải pháp truyền thông toàn diện cho lĩnh vực giáo dục, góp phần nâng cao hình ảnh thương hiệu, tăng cường kết nối với người học và mở rộng sức ảnh hưởng tới cộng đồng. Chúng tôi kết hợp giữa truyền thông hiện đại và tổ chức sự kiện để tạo nên những chiến dịch hiệu quả và bền vững.'
 			=> 'ECSGES provides comprehensive media solutions for the education sector, enhancing brand image, strengthening connections with learners and expanding community reach. We combine modern media with event organisation to create effective, lasting campaigns.',
+
+		/* Trang "Lĩnh vực hoạt động" — đoạn mô tả tab HƯỚNG NGHIỆP (ecsges_linh_vuc_tabs(),
+		   ngắn hơn bản ecsges_ecosystem_tabs() ở trên — không có "và hội nhập") */
+		'ECSGES đồng hành cùng học sinh, sinh viên trên hành trình khám phá bản thân, định hình mục tiêu nghề nghiệp và lựa chọn lộ trình học tập phù hợp. Thông qua các chương trình tư vấn, trải nghiệm thực tế và cập nhật xu hướng thị trường lao động, chúng tôi giúp người học xây dựng nền tảng vững chắc để phát triển trong môi trường làm việc hiện đại.'
+			=> 'ECSGES accompanies pupils and students on their journey of self-discovery, shaping career goals and choosing a suitable learning path. Through advisory programs, real-world experience and up-to-date labour market insights, we help learners build a solid foundation to grow in a modern working environment.',
 
 		/* Trang "Lĩnh vực hoạt động" — tiêu đề 5 tab */
 		'Định hướng tương lai từ sự thấu hiểu năng lực'      => 'Shaping the future through a true understanding of ability',
@@ -351,12 +364,12 @@ Deployed training management solutions for IT centres.
 Built the management foundation and development direction in the education field.',
 		'Năm 2008, đổi tên thành công ty cổ phần truyền thông BTS Việt Nam. Chuyển đổi sang các lĩnh vực hướng nghiệp, tuyển sinh và đào tạo.'
 			=> 'In 2008, renamed BTS Vietnam Media Joint Stock Company. Shifted into career guidance, admissions and training.',
-		'Năm 2019, đổi tên thành Công ty cổ phần hỗ trợ và phát triển chọn nghề khởi nghiệp ECS Global. Mở rộng các pháp nhân. Ứng dụng công nghệ và kiện toàn tổ chức'
+		'Năm 2019, đổi tên thành Công ty cổ phần hỗ trợ và phát triển chọn nghề khởi nghiệp ECS Global. Mở rộng các pháp nhân. Ứng dụng công nghệ và kiện toàn tổ chức.'
 			=> 'In 2019, renamed ECS Global Career & Startup Support and Development Joint Stock Company.
 Expanded the group of legal entities.
-Applied technology and consolidated the organisation',
-		'Năm 2026, đổi tên thành Công ty cổ phần hỗ trợ và phát triển ECSGES, phát triển hệ thống chuỗi văn phòng'
-			=> 'In 2026, renamed ECSGES Support and Development Joint Stock Company, expanding the chain of offices',
+Applied technology and consolidated the organisation.',
+		'Năm 2026, đổi tên thành Công ty cổ phần hỗ trợ và phát triển ECSGES, phát triển hệ thống chuỗi văn phòng.'
+			=> 'In 2026, renamed ECSGES Support and Development Joint Stock Company, expanding the chain of offices.',
 
 		/* Trang "Về ECS" — tầm nhìn / sứ mệnh (bản cập nhật) */
 		'Trở thành một tổ chức hàng đầu cung cấp sản phẩm, dịch vụ và giải pháp trong lĩnh vực hướng nghiệp, tuyển sinh, đào tạo, việc làm, truyền thông. ECSGES sẽ là doanh nghiệp đáng tin cậy và chuyên nghiệp trong cung cấp nguồn nhân lực chất lượng quốc tế.'
@@ -374,6 +387,17 @@ Applied technology and consolidated the organisation',
 		'Đối tác, tổ chức hỗ trợ và phát triển'                              => 'Partners and supporting organisations',
 		'CBGVNV với 50+ tiến sĩ, thạc sĩ'                                    => 'Staff and lecturers, including 50+ PhDs and Masters',
 
+		/* Trang "Về ECS" — số liệu (ecsges_ve_ecs_stats(), bản hiện tại) */
+		'Năm thành lập và phát triển'  => 'Years of establishment and growth',
+		'Văn phòng toàn quốc'          => 'Offices nationwide',
+		'Sinh viên được đào tạo'       => 'Students trained',
+		'Trường học được tư vấn'       => 'Schools advised',
+		'Đối tác'                      => 'Partners',
+		'Tiến sĩ, Thạc sĩ, CBNV'       => 'PhDs, Masters & staff',
+
+		/* Trang "Về ECS" — hero */
+		'GIỚI THIỆU VỀ ECS'            => 'INTRODUCING ECS',
+
 		/* Trang "Phát triển bền vững" */
 		'Giám đốc kinh doanh'    => 'Business Director',
 		'TẬN TÂM'                => 'DEDICATION',
@@ -381,8 +405,8 @@ Applied technology and consolidated the organisation',
 		'ĐỔI MỚI'                => 'INNOVATION',
 		'Chúng tôi tin rằng sự tận tâm là nền tảng của mọi giá trị bền vững. Mỗi cán bộ, giảng viên và chuyên gia của ECSGES luôn làm việc bằng trách nhiệm, sự chân thành và tinh thần phụng sự, hướng đến lợi ích của người học, đối tác và cộng đồng.'
 			=> 'We believe dedication is the foundation of every lasting value. Every officer, lecturer and expert at ECSGES works with responsibility, sincerity and a spirit of service, always for the benefit of learners, partners and the community.',
-		'ECSGES không chỉ cung cấp dịch vụ giáo dục mà còn đồng hành cùng người học trên từng chặng đường phát triển. Từ định hướng nghề nghiệp, lựa chọn ngành học đến quá trình học tập và phát triển sự nghiệp, chúng tôi luôn là người bạn đồng hành đáng tin cậy.'
-			=> 'ECSGES does not merely provide education services; we walk with learners through every stage of their growth. From career orientation and choosing a major to studying and building a career, we are always a trusted companion.',
+		'ECSGES đồng hành cùng người học trên từng chặng đường phát triển. Từ định hướng nghề nghiệp, lựa chọn ngành học đến quá trình học tập và phát triển sự nghiệp, chúng tôi luôn là người bạn đồng hành đáng tin cậy.'
+			=> 'ECSGES walks with learners through every stage of their growth. From career orientation and choosing a major to studying and building a career, we are always a trusted companion.',
 		'Đổi mới là động lực để ECSGES không ngừng phát triển. Với tư duy mở và tinh thần tiên phong, chúng tôi liên tục cập nhật xu hướng, nâng cao chất lượng và kiến tạo những giá trị mới nhằm đáp ứng yêu cầu của thời đại hội nhập.'
 			=> 'Innovation is the driving force behind ECSGES\'s continuous growth. With an open mindset and a pioneering spirit, we constantly follow new trends, raise quality and create new value to meet the demands of an integrated era.',
 		'HỌC HỎI'                => 'LEARNING',
@@ -403,6 +427,26 @@ Applied technology and consolidated the organisation',
 			=> 'Contributing to the training and development of high-quality human resources for the country\'s growth.',
 		'Đồng hành cùng thế hệ trẻ trên hành trình hội nhập, sáng tạo và kiến tạo giá trị cho xã hội.'
 			=> 'Walking with the young generation on their journey of integration, creativity and creating value for society.',
+
+		/* Trang "Phát triển bền vững" — VĂN HÓA ECS (ecsges_ptbv_culture(), bản hiện tại) */
+		'ECSGES xây dựng môi trường khuyến khích học tập và phát triển liên tục thông qua các chương trình đào tạo nội bộ, hoạt động chia sẻ chuyên môn và cơ hội tham gia các khóa học nâng cao cho đội ngũ CBGVNV'
+			=> 'ECSGES builds an environment that encourages continuous learning and development through in-house training programs, professional knowledge sharing and access to advanced courses for our officers, lecturers and staff',
+		'Tinh thần hợp tác được đề cao trong mọi hoạt động khi các đơn vị, phòng ban và cá nhân luôn chủ động kết nối, phối hợp chặt chẽ để cùng giải quyết công việc, nâng cao hiệu quả hoạt động và mang lại những giá trị tốt nhất cho người học và đối tác.'
+			=> 'A spirit of collaboration is valued in every activity: units, departments and individuals proactively connect and coordinate closely to solve problems together, raise operational efficiency and bring the best value to learners and partners.',
+		'PHỤNG SỰ'               => 'SERVICE',
+		'Mỗi CBGVNV ECSGES luôn đặt lợi ích của người học và cộng đồng lên hàng đầu, tận tụy đồng hành và hỗ trợ để mang lại những giá trị giáo dục thiết thực, góp phần xây dựng một xã hội học tập bền vững.'
+			=> 'Every ECSGES officer, lecturer and staff member always puts the interests of learners and the community first, devotedly accompanying and supporting them to deliver practical educational value and help build a sustainable learning society.',
+
+		/* Trang "Phát triển bền vững" — TRÁCH NHIỆM XÃ HỘI (ecsges_ptbv_responsibility(), bản hiện tại) */
+		'KHUYẾN HỌC'             => 'PROMOTING EDUCATION',
+		'Lan tỏa cơ hội học tập và tiếp cận giáo dục cho nhiều đối tượng trong cộng đồng, đồng hành cùng học sinh, sinh viên có hoàn cảnh khó khăn thông qua học bổng và các chương trình hỗ trợ thiết thực.'
+			=> 'Spreading learning opportunities and access to education across many groups in the community, accompanying disadvantaged pupils and students through scholarships and practical support programs.',
+		'CỘNG ĐỒNG'              => 'COMMUNITY',
+		'Gắn kết và sẻ chia cùng cộng đồng qua các hoạt động thiện nguyện, kết nối các thế hệ và lan tỏa tinh thần tương thân tương ái trong xã hội.'
+			=> 'Bonding and sharing with the community through charitable activities, connecting generations and spreading a spirit of mutual support across society.',
+		'PHÁT TRIỂN'             => 'DEVELOPMENT',
+		'Đồng hành cùng thế hệ trẻ trên hành trình hội nhập, sáng tạo và kiến tạo giá trị cho xã hội, góp phần phát triển nguồn nhân lực chất lượng cao phục vụ đất nước.'
+			=> 'Accompanying the young generation on their journey of integration and creativity, creating value for society and contributing to the development of high-quality human resources for the country.',
 		'Hướng dẫn nạp tiền'             => 'How to top up',
 		'Hướng dẫn kích hoạt gói'        => 'How to activate a package',
 		'Hướng dẫn KYC tài khoản'        => 'How to complete account KYC',
