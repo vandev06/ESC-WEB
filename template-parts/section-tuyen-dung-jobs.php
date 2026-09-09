@@ -146,6 +146,10 @@ $ecsges_job_levels = ecsges_job_levels();
 							if ( '' === $job_href ) {
 								$job_tag .= ' ecs-job-card--inert';
 							}
+							if ( ! empty( $ecsges_job['tag'] ) ) {
+								// Chỉ card có badge "Nổi bật" mới cần tiêu đề chừa chỗ bên phải.
+								$job_tag .= ' ecs-job-card--has-badge';
+							}
 							?>
 							<article
 								class="<?php echo esc_attr( $job_tag ); ?>"

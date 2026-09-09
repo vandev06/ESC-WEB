@@ -769,43 +769,53 @@
     align-self: flex-start;
   }
 
+  // .is-open: gắn bằng JS trên mobile/tablet (không có hover thật) — sau 2s
+  // kể từ lúc thẻ cuộn vào khung nhìn thì tự mở, thay cho :hover (xem
+  // initRevealCardMobileOpen() ở assets/js/main.js).
   &:hover,
-  &:focus-within {
+  &:focus-within,
+  &.is-open {
     background: $brand;
     border-color: $brand;
   }
 
   &:hover::after,
-  &:focus-within::after {
+  &:focus-within::after,
+  &.is-open::after {
     height: 100%;
   }
 
   &:hover &__title,
-  &:focus-within &__title {
+  &:focus-within &__title,
+  &.is-open &__title {
     color: #fff;
   }
 
   &:hover &__icon,
-  &:focus-within &__icon {
+  &:focus-within &__icon,
+  &.is-open &__icon {
     filter: brightness(0) invert(1);
   }
 
   &:hover &__rule,
-  &:focus-within &__rule {
+  &:focus-within &__rule,
+  &.is-open &__rule {
     background: rgba(#fff, 0.7);
   }
 
   // Vào hover thì ĐẢO lại nhịp: ảnh mờ ngay (0.3s) rồi ẩn hẳn, chữ đợi 0.3s
   // mới hiện — không lúc nào hai lớp cùng nhìn thấy.
   &:hover &__image,
-  &:focus-within &__image {
+  &:focus-within &__image,
+  &.is-open &__image {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
   }
 
   &:hover &__overlay,
-  &:focus-within &__overlay {
+  &:focus-within &__overlay,
+  &.is-open &__overlay {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3s ease 0.3s;
@@ -1389,23 +1399,29 @@
     flex: 1 1 auto;
   }
 
-  // Figma: 26px Medium #000, line-height 32; theo yêu cầu giới hạn CÒN 1 dòng
-  // (Figma cho 2 dòng) — tiêu đề dài bị cắt "…" thay vì làm card cao thêm.
+  // Figma: 26px Medium #000, line-height 32, giới hạn 2 dòng — tiêu đề dài
+  // hơn 2 dòng mới bị cắt "…" (card cao không đều giữa các job là chấp nhận
+  // được, theo yêu cầu hiển thị đủ tên thay vì cắt còn 1 dòng).
+  //
+  // Dưới mobile (1 cột, xem &__page ở .ecs-jobs) không có card nào đứng cạnh
+  // để so lệch chiều cao, nên bỏ hẳn giới hạn dòng — tên luôn hiện đủ, card
+  // tự cao theo nội dung.
   &__title {
     margin: 0 0 4px;
-    // Chừa chỗ cho badge ở góc trên phải để tiêu đề không chui xuống dưới nó.
-    padding-inline-end: 100px;
     font-family: $font-display;
     font-size: 22px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: $ls-base;
     color: $ink;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
+    @include bp(md) {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
 
     // Figma ghi 26px cho desktop, nhưng theo yêu cầu giữ 22px ở MỌI bề rộng
     // (đã bỏ override @include bp(lg) { font-size: 26px; }).
@@ -1420,6 +1436,12 @@
         color: $brand;
       }
     }
+  }
+
+  // Chỉ card có badge "Nổi bật" mới cần tiêu đề chừa chỗ bên phải cho nó ở
+  // góc trên (card thường để rộng hết chỗ, đỡ bị cắt dòng oan trên mobile).
+  &--has-badge &__title {
+    padding-inline-end: 100px;
   }
 
   // Tên đơn vị tuyển dụng — dòng phụ xám dưới tiêu đề (field ACF 'company_name',
@@ -1768,10 +1790,13 @@
   }
 
   // Figma: chip cao 40, bo 20, nền #f0f0f0, chữ 18px Light #747272.
+  // min-height (thay vì height cố định) + padding-block: chữ dài xuống dòng ở
+  // màn hẹp thì nền/viền giãn theo, không để chữ tràn ra ngoài khung bo tròn.
   &__chip {
     display: inline-flex;
     align-items: center;
-    height: 40px;
+    min-height: 40px;
+    padding-block: 8px;
     padding-inline: 19px;
     border-radius: 20px;
     background: $surface-2;

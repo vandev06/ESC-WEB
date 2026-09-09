@@ -27,6 +27,7 @@
     initStatsCounter();
     initPtbvCarousel();
     initPtbvCulture();
+    initRevealCardMobileOpen();
     initLangDropdown();
     initMobileSubmenu();
     initHeaderSearch();
@@ -178,6 +179,34 @@
       });
     }, { threshold: 0.25 });
     Array.prototype.forEach.call(blocks, function (b) { io.observe(b); });
+  }
+
+  /* ---------------------------------------------------------------- */
+  /**
+   * .ecs-reveal-card (trang Phát triển bền vững) mở bằng :hover trên desktop.
+   * Trên mobile/tablet không có hover thật, nên khi thẻ cuộn vào khung nhìn
+   * thì đợi 2s rồi tự gắn .is-open (SCSS coi như đang hover — xem _pages.scss)
+   * để người dùng vẫn thấy được panel mô tả + nút "Xem thêm" mà không cần chạm.
+   * Chỉ chạy dưới breakpoint lg (1024px, ngưỡng ẩn/hiện bản desktop của trang
+   * này) và bắn một lần cho mỗi thẻ.
+   */
+  function initRevealCardMobileOpen() {
+    var cards = document.querySelectorAll('.ecs-reveal-card');
+    if (!cards.length) return;
+
+    var isMobile = window.matchMedia && window.matchMedia('(max-width: 1023px)').matches;
+    if (!isMobile || !('IntersectionObserver' in window)) return;
+
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var card = entry.target;
+        io.unobserve(card);
+        setTimeout(function () { card.classList.add('is-open'); }, 2000);
+      });
+    }, { threshold: 0.5 });
+
+    Array.prototype.forEach.call(cards, function (c) { io.observe(c); });
   }
 
   /* ---------------------------------------------------------------- */

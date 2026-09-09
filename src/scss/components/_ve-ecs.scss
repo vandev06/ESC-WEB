@@ -509,6 +509,7 @@
     height: 56px;
     width: 56px;
     object-fit: contain;
+    filter: brightness(0) invert(1);
   }
 
   &__item-key {
