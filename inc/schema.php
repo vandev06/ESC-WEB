@@ -176,7 +176,7 @@ function ecsges_schema_breadcrumb( $page_id ) {
 
 	return array(
 		'@type'           => 'BreadcrumbList',
-		'@id'             => $page_id . '#breadcrumb',
+		'@id'             => preg_replace( '/#.*$/', '', $page_id ) . '#breadcrumb',
 		'itemListElement' => $list,
 	);
 }
@@ -411,7 +411,14 @@ function ecsges_schema_context_node() {
 		return $node;
 	}
 
-	/* ---------- Còn lại (tìm kiếm, 404, lưu trữ khác) ---------- */
+	/* ---------- 404 / tìm kiếm: KHÔNG có URL chuẩn ---------- */
+	// Không dựng @id từ URL người dùng gõ: bot gõ đường dẫn bịa (vd spam cờ
+	// bạc) sẽ "xuất hiện" trong mã nguồn trang. Chỉ giữ Organization + WebSite.
+	if ( is_404() || is_search() ) {
+		return array();
+	}
+
+	/* ---------- Còn lại (lưu trữ khác) ---------- */
 	$url = home_url( add_query_arg( array() ) );
 	return array(
 		'@type'      => 'WebPage',
@@ -470,14 +477,17 @@ function ecsges_schema_output() {
 	$graph   = array(
 		ecsges_schema_organization(),
 		ecsges_schema_website(),
-		$context,
 	);
 
-	$crumbs = ecsges_schema_breadcrumb( isset( $context['@id'] ) ? $context['@id'] : ecsges_schema_home() );
-	if ( $crumbs ) {
-		$graph[]            = $crumbs;
-		$context['breadcrumb'] = array( '@id' => $crumbs['@id'] );
-		$graph[2]           = $context; // cập nhật lại node ngữ cảnh đã thêm liên kết
+	// 404 / tìm kiếm: context rỗng → bỏ cả WebPage lẫn BreadcrumbList.
+	if ( ! empty( $context ) ) {
+		$graph[] = $context;
+		$crumbs  = ecsges_schema_breadcrumb( isset( $context['@id'] ) ? $context['@id'] : ecsges_schema_home() );
+		if ( $crumbs ) {
+			$graph[]               = $crumbs;
+			$context['breadcrumb'] = array( '@id' => $crumbs['@id'] );
+			$graph[2]              = $context; // cập nhật lại node ngữ cảnh đã thêm liên kết
+		}
 	}
 
 	$payload = array(
