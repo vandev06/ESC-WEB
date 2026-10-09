@@ -17,6 +17,7 @@ require_once get_template_directory() . '/inc/acf-fields.php';
 require_once get_template_directory() . '/inc/theme-options.php';
 require_once get_template_directory() . '/inc/tac-gia.php';
 require_once get_template_directory() . '/inc/permalinks.php';
+require_once get_template_directory() . '/inc/gone.php';
 // breadcrumb PHẢI nạp trước schema: ecsges_schema_breadcrumb() dùng
 // ecsges_breadcrumb_items() để dựng BreadcrumbList.
 require_once get_template_directory() . '/inc/breadcrumb.php';
